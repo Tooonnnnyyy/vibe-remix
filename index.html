@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vibe remix — strudel live coding</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>vibe<span class="accent">.remix</span></h1>
+        <p class="tagline">live-code the vibe with Strudel</p>
+      </header>
+
+      <section class="controls">
+        <button id="play" class="btn btn--play" type="button">▶ play</button>
+        <button id="stop" class="btn btn--stop" type="button">■ stop</button>
+      </section>
+
+      <section class="presets" aria-label="preset vibes">
+        <button class="preset" data-pattern="seed" type="button">seed</button>
+        <button class="preset" data-pattern="lofi" type="button">lofi</button>
+        <button class="preset" data-pattern="acid" type="button">acid</button>
+        <button class="preset" data-pattern="ambient" type="button">ambient</button>
+      </section>
+
+      <textarea
+        id="editor"
+        class="editor"
+        spellcheck="false"
+        aria-label="strudel pattern editor"
+      ></textarea>
+
+      <footer class="app__footer">
+        <span>ctrl/cmd + enter to play · powered by <a href="https://strudel.cc" target="_blank" rel="noopener">Strudel</a></span>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "vibe-remix",
+  "version": "0.1.0",
+  "description": "Vibe remixing — live-code music with Strudel (TidalCycles-style patterns in JavaScript)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "@strudel/web": "1.3.0"
+  }
+}
