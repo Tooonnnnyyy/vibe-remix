@@ -35,12 +35,26 @@ npm run preview
 
 ## Presets
 
-| name     | feel                                    |
-| -------- | --------------------------------------- |
-| seed     | classic Strudel demo — G minor melody   |
-| lofi     | dusty beats + warm saw chords           |
-| acid     | squelchy saw bass + four-on-the-floor   |
-| ambient  | slow sine pads drifting in F major      |
+| name        | feel                                    |
+| ----------- | --------------------------------------- |
+| seed        | classic Strudel demo — G minor melody   |
+| lofi        | dusty beats + warm saw chords           |
+| acid        | squelchy saw bass + four-on-the-floor   |
+| ambient     | slow sine pads drifting in F major      |
+| 99 nights   | full 88-cycle composition (C# minor, 106 BPM) — see below |
+
+## "99 Nights"
+
+`src/patterns/99-nights.js` holds a full-length vibe remix — 88 cycles across
+8 song sections (intro → verse → pre-chorus → drop → verse 2 → bridge →
+climax → outro), built from layered Strudel patterns: chord voicings, lead
+melodies, arpeggios, basslines, TR-808/909 drums, and atmospheric FX.
+
+It uses the same default sound libraries as the strudel.cc REPL (piano, VCSL
+instruments, tidal-drum-machines, and GM soundfonts), which `main.js` loads in
+its `prebake`. The only change from a copy-paste of the REPL version is the
+removal of two REPL-only visualizer calls (`._pianoroll()` and `._scope()`),
+which don't exist in a bare `@strudel/web` build.
 
 ## License
 

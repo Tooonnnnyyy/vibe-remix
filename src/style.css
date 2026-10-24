@@ -108,6 +108,16 @@ body {
   border-color: var(--accent-2);
 }
 
+.preset--full {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.preset--full:hover {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
 .editor {
   width: 100%;
   min-height: 320px;
